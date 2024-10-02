@@ -1,0 +1,146 @@
+
+@font-face {
+    font-family: Vintage4;
+    src:url(Vinatge4.ttf);
+}
+
+@font-face {
+    font-family: Vintage;
+    src:url(Vintage.otf);
+}
+
+
+body {
+justify-content: center;
+align-items: center;
+min-height: 10vh;
+background-image: url(BgIMG4.png);
+background-size: 900px 500px;
+background-position: center;
+color: #fff;
+padding: 0;
+}
+
+header {
+background-color: #800000;
+padding: 30px;
+padding-top: 50px;
+text-align: center;
+font-size: 50px;
+color: #ffd700;
+font-family: Vintage4;
+letter-spacing: 5px;
+background-image: url(BgIMG5.jpg);
+}
+
+header span{
+transition: 0.5s ease-out;
+}
+
+header:hover span:nth-child(1){
+margin-right: 10px;
+}
+
+header:hover span:nth-child(2){
+margin-right: 10px;
+}
+
+header:hover span:nth-child(3){
+margin-left: 10px;
+}
+
+header:hover span:nth-child(4){
+margin-left: 10px;
+}
+
+header:hover span{
+color: #ffd700;
+text-shadow: 0 0 10px #ffd700,
+ 0 0 20px #ffd700,
+ 0 0 30px #ffd700;
+}               
+
+nav{
+position: relative;
+margin: 10px auto 0;
+width: 590px;
+height: 50px;
+background:#800000;
+border-radius: 8px;
+font-size: 0;
+}
+
+nav a{
+font-size: 20px;
+font-family: Vintage;
+letter-spacing: 3px;
+text-transform: uppercase;
+color: #ffd700;
+text-decoration: none;
+line-height: 50px;
+position: relative;
+z-index: 1;
+display: inline-block;
+padding: 0 23px;
+text-align: center;
+
+}
+
+nav .animation{
+position: absolute;
+height: 100%;
+top: 0;
+z-index: 0;
+background: black;
+border-radius: 8px;
+transition: .5s;
+}
+
+nav a:nth-child(1){
+width: 100px;
+}
+nav .start-film, a:nth-child(1):hover~.animation{
+width: 130px;
+left: 0;
+}
+nav a:nth-child(2){
+width: 100px;
+}
+nav .start-characters, a:nth-child(2):hover~.animation{
+width: 140px;
+left: 156px;
+}
+nav a:nth-child(3){
+width: 100px;
+}
+nav .start-storyboard, a:nth-child(3):hover~.animation{
+width: 130px;
+left: 306px;
+}
+nav a:nth-child(4){
+width: 100px;
+}
+nav a:nth-child(4):hover~.animation{
+width: 150px;
+left: 440px;
+}
+
+h2{
+font-family: Vintage4;
+letter-spacing: 3px;
+font-size:30px;
+text-transform: uppercase;
+margin: 30px;
+}
+
+p{
+    margin-left: 60px;
+    margin-right: 60px;
+}
+section {
+    padding: 20px;
+    text-align: center;
+}
+.scene {
+    margin: 50px 0;
+}
